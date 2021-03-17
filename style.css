@@ -1,0 +1,175 @@
+.pic {   
+    text-align: center;
+      position: absolute;    
+      width: 100vw;
+  }
+  
+  .center {  
+    text-align: center;
+    display: block;
+    margin-left: 23vw;
+    margin-top: 5%;
+    width: 50vw;
+    transition: all 0.3s ease-in-out;
+  }
+  body {  
+    overflow: hidden;
+  }
+  .blur {
+      height: 100vh;
+  }
+  .overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100vh;
+  }
+  circle {
+     opacity: 1;
+     -webkit-transition: opacity 200ms linear;
+     transition: opacity 200ms linear;
+  }
+  
+  .topnav {
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Vollkorn SC', serif;
+    
+  }
+  
+  .topnav a {
+    font-family: 'Vollkorn SC', serif;
+    font-style: normal;
+    font-weight: 100;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;  
+    text-decoration: none;
+    font-size: 22px;  
+    transition: font-size .3s  ease-in-out;
+  }
+  
+  .topnav a:hover {  
+    color: white;
+    font-size: 26px;  
+  }
+  
+  .topnav a.active {
+    background-color: #0000;
+    color: white;
+  }
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      background-color: #0000;
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body{
+        overflow:scroll;
+    }
+    .topnav.responsive {position: absolute; width: 100vw;
+    backdrop-filter: blur(10px);}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0px;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 0.5px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 3px);
+    transform: rotate(-45deg) translate(-4.5px, 2px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  @font-face {
+      font-family: myFirstFont;
+      src: url(sansation_light.woff);
+  }
+  .card {
+      background-color: rgba(255, 255, 255, 0);    
+      border-radius: 2px;
+      display: inline-block;
+      height: 70vh;
+      margin-top: 100vh;    
+      margin-left: 23vw;
+      position: absolute;
+      width: 50vw;    
+      
+      
+      transition: all 5s ease-in-out;    
+    }    
+  #k{
+      transition: margin-top 0.3s ease-in-out;
+  }
+  .column {
+    cursor:pointer;
+      float: left;
+      border-radius: 20px;
+      width: 100%;
+      padding: 10px;
+      margin:3px;
+      color: white;
+      backdrop-filter: blur(30px);
+      transition: all 0.1s ease-in-out;    
+   }
+   .column:hover{
+    transform: scale(1.07);    
+}
+   
+   /* Clear floats after the columns */
+   .row:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+  @media only screen and (max-width: 600px) {
+      image {
+        height: 100vh;
+        width: auto;
+      }
+      .center{
+        margin-left: 3vw;
+        margin-top: 50%;
+        width: 100vw;    
+      }
+      .card{
+          margin-left: 2vw;
+          width: 95vw
+      }
+  }
