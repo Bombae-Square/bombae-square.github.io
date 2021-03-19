@@ -25,9 +25,9 @@ function bruh(){
     const mediaQuery = window.matchMedia('(max-width: 600px)')
     
     if(mediaQuery.matches){
-        document.getElementsByTagName("body")[0].style.overflow="scroll";
+        document.getElementsById("k").style.overflow="scroll";
         document.getElementById("j").style.width="40vw";
-        document.getElementById("j").style.marginTop="30vw";
+        document.getElementById("j").style.marginTop="20vw";
         document.getElementById("j").style.marginLeft= "33vw";
     }
     else{
@@ -35,7 +35,7 @@ function bruh(){
         document.getElementById("j").style.marginLeft= "43vw";          
     }   
     document.getElementById("blur").setAttribute("stdDeviation", "0");
-    document.getElementById("k").style.marginTop="32vh";       
+    document.getElementById("k").style.marginTop="28vh";       
 }
 function mf(){
     document.getElementById("br").style.display="none";
@@ -44,7 +44,7 @@ function mf(){
     if(mediaQuery.matches){
             
         document.getElementById("j").style.width="40vw";
-        document.getElementById("j").style.marginTop="30vw";
+        document.getElementById("j").style.marginTop="20vw";
         document.getElementById("j").style.marginLeft= "33vw";
     }
     else{
