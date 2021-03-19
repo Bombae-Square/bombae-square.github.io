@@ -9,6 +9,7 @@ function home(){
         document.getElementById("j").style.width="100vw";
         document.getElementById("j").style.marginTop="50%";
         document.getElementById("j").style.marginLeft= "3vw";
+        document.getElementsByTagName("body")[0].style.overflow="scroll";
     }
     else{
         document.getElementById("j").style.width="50vw";
