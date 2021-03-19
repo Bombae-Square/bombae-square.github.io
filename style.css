@@ -76,9 +76,7 @@
   }
   
   @media screen and (max-width: 600px) {
-    body{
-        overflow:scroll;
-    }
+   
     .topnav.responsive {position: absolute; width: 100vw;
     backdrop-filter: blur(10px);}
     .topnav.responsive .icon {
