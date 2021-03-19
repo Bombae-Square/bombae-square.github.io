@@ -25,7 +25,7 @@ function bruh(){
     const mediaQuery = window.matchMedia('(max-width: 600px)')
     
     if(mediaQuery.matches){
-        document.getElementsById("k").style.overflow="scroll";
+        document.getElementById("k").style.overflow="scroll";
         document.getElementById("j").style.width="40vw";
         document.getElementById("j").style.marginTop="20vw";
         document.getElementById("j").style.marginLeft= "33vw";
