@@ -41,19 +41,18 @@ function mf(){
     document.getElementById("br").style.display="none";
     document.getElementById("cr").style.display="block";    
     const mediaQuery = window.matchMedia('(max-width: 600px)')
-    if(mediaQuery.matches){
-            
+   if(mediaQuery.matches){
+        document.getElementById("k").style.overflow="scroll";
         document.getElementById("j").style.width="40vw";
         document.getElementById("j").style.marginTop="20vw";
         document.getElementById("j").style.marginLeft= "33vw";
     }
     else{
-        
         document.getElementById("j").style.width="10vw";
         document.getElementById("j").style.marginLeft= "43vw";          
     }   
     document.getElementById("blur").setAttribute("stdDeviation", "0");
-    document.getElementById("k").style.marginTop="32vh";   
+    document.getElementById("k").style.marginTop="28vh";    
 }
 
 
